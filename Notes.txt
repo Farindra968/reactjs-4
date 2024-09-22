@@ -1,0 +1,61 @@
+Props: 
+In React, props (short for "properties") are a core concept used to pass data from one component to another, typically from a parent component to a child component.
+Ex: 
+function Button(props) {
+  return <Button>{props.label}!</Button>;
+}
+export default Button
+
+
+function App() {
+  return 
+  <Button label="Submit" />;
+  <Button label="Edith" />;
+  <Button label="Upload" />; 
+}
+export default App
+-----------------------------
+
+State Management in React:
+State management in React refers to the way data (state) is handled and shared across components in an application. It helps you keep track of dynamic values (like user inputs, API responses, etc.) and update the UI whenever those values change.
+
+Simple Definition:
+State management is the process of controlling how data is stored, updated, and shared between components to keep the UI in sync with the application's data.
+
+Types of Hook:
+Here is a list of the most common types of hooks in React:
+
+Basic Hooks:
+useState: Manages state in functional components.
+Example: const [count, setCount] = useState(0);
+
+i.e:
+const Button = (props) => {
+
+    const[label, setlabel]=useState("Want to Press");
+    function newlabel (){
+        setlabel("WOW You Done");
+    }
+
+  return (
+    <div>
+      <button onClick={newlabel}>{label}</button>
+    </div>
+  )
+}
+
+export default Button
+----------------------------------------
+
+useEffect: Handles side effects such as data fetching, subscriptions, or manually changing the DOM after rendering.
+Example: useEffect(() => { /* side effect code */ }, []);
+
+useContext: Allows you to access values from a context without passing props.
+Example: const value = useContext(MyContext);
+
+useReducer: An alternative to useState for managing more complex state logic, often used with a reducer function.
+Example: const [state, dispatch] = useReducer(reducer, initialState);
+
+useRef: Allows you to create a reference to a DOM element or store mutable values that persist across renders without causing re-renders.
+Example: const inputRef = useRef(null);
+
