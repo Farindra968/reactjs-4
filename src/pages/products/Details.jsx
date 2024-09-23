@@ -1,7 +1,13 @@
 import React from 'react'
+import Header from '../../constants/Header';
 
 const Details = () => {
-  return  <h1>This is Product Details.jsx </h1>;
+  return (
+    <section>
+      <Header/>
+      <h1 className='my-12 text-red-800 text-2xl '>This is Our Product Details pages</h1>
+    </section>
+    );
 }
 
 export default Details

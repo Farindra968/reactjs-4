@@ -8,11 +8,12 @@ import Register from './pages/auth/Register';
 import ForgetPassword from './pages/auth/ForgetPassword';
 import Add from './pages/products/Add';
 import Details from './pages/products/Details';
+import List from './pages/products/List';
 
 const Routes = () => {
     const router = createBrowserRouter(createRoutesFromElements(
         <Route>
-            <Route path="/home" element={<Home/>}/>
+            <Route index element={<Home/>}/>
             <Route path="/about" element={<About/>}/>
             <Route path="/contact" element={<Contact/>}/>
             <Route path="/login" element= {<Login/>} />
@@ -20,6 +21,7 @@ const Routes = () => {
             <Route path="/forget-password" element={<ForgetPassword/>}/>
             <Route path="/add-items" element={<Add/>}/>
             <Route path="/details" element= {<Details/>} />
+            <Route path="/shop" element={<List/>}/>
             
         </Route>
     ));
