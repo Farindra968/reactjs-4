@@ -1,11 +1,23 @@
 import React from 'react'
-import Header from '../../constants/Header';
+import Header from '../../components/Header';
+import ProductTitle from '../../components/Title';
+import ProductCard from '../../components/ProductCard';
 
 const List = () => {
   return (
     <section>
       <Header/>
-      <h1 className='my-12 text-red-800 text-2xl '>This is Our Product Items List pages</h1>
+      <ProductTitle/>
+      <div className='grid lg:grid-cols-4 gap-6 md:grid-cols-3 sm:grid-cols-2 mt-5'>
+        <ProductCard/>
+        <ProductCard/>
+        <ProductCard/>
+        <ProductCard/>
+        <ProductCard/>
+        <ProductCard/>
+        <ProductCard/>
+        <ProductCard/>
+      </div>
     </section>
     );
 }
