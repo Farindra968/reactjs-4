@@ -5,7 +5,7 @@ const navMenu= [
     },
     {
         route: "/about",
-        label: "about",
+        label: "About",
     },
     {
         route: "/contact",
