@@ -7,13 +7,13 @@ function Button(props) {
 export default Button
 
 
-function App() {
+/* function App() {
   return 
   <Button label="Submit" />;
   <Button label="Edith" />;
   <Button label="Upload" />; 
 }
-export default App
+export default App */
 -----------------------------
 
 State Management in React:
