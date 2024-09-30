@@ -59,8 +59,7 @@ Outup: Hello
     console.log("Hello");
   },)
 Outup: Run "Hello" infinite time
-
-    <h1>Important Tips for Using the useEffect Hook</h1>
+<h1>Important Tips for Using the useEffect Hook</h1>
     <ul>
         <li><strong>Dependency Array:</strong>
             <ul>
