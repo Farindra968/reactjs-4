@@ -9,19 +9,23 @@ import ForgetPassword from './pages/auth/ForgetPassword';
 import Add from './pages/products/Add';
 import Details from './pages/products/Details';
 import List from './pages/products/List';
+import MainLayout from './Layout/MainLayout';
+import ProductDetails from './pages/products/Details';
 
 const Routes = () => {
     const router = createBrowserRouter(createRoutesFromElements(
-        <Route>
+        <Route element={<MainLayout/>}>
             <Route index element={<Home/>}/>
             <Route path="/about" element={<About/>}/>
             <Route path="/contact" element={<Contact/>}/>
-            <Route path="/login" element= {<Login/>} />
-            <Route path="/register" element={<Register/>}/>
-            <Route path="/forget-password" element={<ForgetPassword/>}/>
+            <Route path="/auth/login" element= {<Login/>} />
+            <Route path="/auth/register" element={<Register/>}/>
+            <Route path="/auth/forget-password" element={<ForgetPassword/>}/>
             <Route path="/add-items" element={<Add/>}/>
-            <Route path="/details" element= {<Details/>} />
-            <Route path="/shop" element={<List/>}/>
+            <Route path='/product'>
+                <Route index element={<List/>}/>
+                <Route path=":id" element={<ProductDetails/>}/>
+            </Route>
             
         </Route>
     ));

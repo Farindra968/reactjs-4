@@ -1,13 +1,16 @@
 import React from 'react'
 import Header from '../../components/Header';
+import { useParams } from 'react-router-dom';
+import ProductDetail from '../../components/ProductDetail';
 
-const Details = () => {
+const ProductDetails = () => {
+  const params=useParams();
+  
   return (
-    <section>
-      <Header/>
-      <h1 className='my-12 text-red-800 text-2xl '>This is Our Product Details pages</h1>
+    <section className=''>
+      <ProductDetail/>
     </section>
     );
 }
 
-export default Details
+export default ProductDetails

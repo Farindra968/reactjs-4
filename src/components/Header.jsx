@@ -5,6 +5,7 @@ import { FaBots, FaMarsAndVenus, FaMobile, FaMobileButton, FaStreetView } from '
 import { BiMenu } from 'react-icons/bi';
 import { CiMenuBurger } from 'react-icons/ci';
 import { TiThMenu } from 'react-icons/ti';
+import Login from '../pages/auth/Login';
 
 const Header = () => {
   const navlinkactive=({isActive})=>(isActive?" text-blue-900 font-bold ":"");
@@ -12,14 +13,14 @@ const Header = () => {
   const [ismobilehidden, setmobilehidden]= useState(true);
   return (
     <>
-      <header className=''>
-      <nav className="bg-white border-b-2 fixed z-1 w-full z-0 top-0 start-0">
+      <header className='fixed w-full bg-white border-b-2  top-0 start-0'>
+      <nav className="">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <a href="https://flowbite.com/" className="flex items-center space-x-3 rtl:space-x-reverse">
+          <a href="https://flowbite.com/" className="flex items-center ">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Amazon_2024.svg/200px-Amazon_2024.svg.png" className="h-8" alt="Flowbite Logo" />
           </a>
           <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-            <a href="/login"><button type="button" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Login</button></a>
+            <NavLink to={Login}> <button type="button" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Login</button></NavLink>
             <button data-collapse-toggle="navbar-sticky" type="button" onClick={()=>setmobilehidden(!ismobilehidden)} className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
               <span className="sr-only">Open main menu</span>
               <TiThMenu className='text-black text-2xl'/>

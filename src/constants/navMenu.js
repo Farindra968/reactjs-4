@@ -12,9 +12,10 @@ const navMenu= [
         label: "Contact",
     },
     {
-        route: "/shop",
+        route: "/product",
         label: "Shop",
     },
+
 
 ]
 
