@@ -13,7 +13,7 @@ const Header = () => {
   const [ismobilehidden, setmobilehidden]= useState(true);
   return (
     <>
-      <header className='fixed w-full bg-white border-b-2  top-0 start-0'>
+      <header className='fixed w-full bg-white border-b-2 z-10 top-0 start-0'>
       <nav className="">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a href="https://flowbite.com/" className="flex items-center ">

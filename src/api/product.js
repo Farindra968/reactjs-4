@@ -1,14 +1,20 @@
 import axios from "axios";
+import config from "../config/configAPI";
 
-const baseAPIUrl = "https://nodejs-20240519.vercel.app";
 
-const getproduct = async() => {
+
+
+const getProduct = async() => {
   const response = await axios
-    .get(`${baseAPIUrl}/api/products`)
+    .get(`${config.baseapiurl}/api/products`)
     return response;
     
-
-
 };
 
-export { getproduct };
+const getProductByid = async(id) => {
+    const response = await axios.get(`${config.baseapiurl}/api/products/${id}`)
+    return response;
+      
+  };
+
+export { getProduct, getProductByid };
