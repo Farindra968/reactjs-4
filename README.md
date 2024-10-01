@@ -7,13 +7,13 @@ function Button(props) {
 export default Button
 
 
-function App() {
+/* function App() {
   return 
   <Button label="Submit" />;
   <Button label="Edith" />;
   <Button label="Upload" />; 
 }
-export default App
+export default App */
 -----------------------------
 
 State Management in React:
@@ -59,8 +59,7 @@ Outup: Hello
     console.log("Hello");
   },)
 Outup: Run "Hello" infinite time
-
-    <h1>Important Tips for Using the useEffect Hook</h1>
+<h1>Important Tips for Using the useEffect Hook</h1>
     <ul>
         <li><strong>Dependency Array:</strong>
             <ul>
