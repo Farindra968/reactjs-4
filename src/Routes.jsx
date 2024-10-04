@@ -6,11 +6,10 @@ import Contact from './pages/Contact';
 import Login from './pages/auth/Login';
 import Register from './pages/auth/Register';
 import ForgetPassword from './pages/auth/ForgetPassword';
-import Add from './pages/products/Add';
-import Details from './pages/products/Details';
 import List from './pages/products/List';
 import MainLayout from './Layout/MainLayout';
 import ProductDetails from './pages/products/Details';
+import AddProduct from './pages/auth/AddProduct';
 
 const Routes = () => {
     const router = createBrowserRouter(createRoutesFromElements(
@@ -21,7 +20,7 @@ const Routes = () => {
             <Route path="/auth/login" element= {<Login/>} />
             <Route path="/auth/register" element={<Register/>}/>
             <Route path="/auth/forget-password" element={<ForgetPassword/>}/>
-            <Route path="/add-items" element={<Add/>}/>
+            <Route path="/views-product" element={<AddProduct/>}/>
             <Route path='/product'>
                 <Route index element={<List/>}/>
                 <Route path=":id" element={<ProductDetails/>}/>

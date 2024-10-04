@@ -1,10 +1,13 @@
 import React from 'react'
 import Header from '../../components/Header';
+import ForgetPasswordForm from '../../components/ForgetPasswordForm';
 
 const ForgetPassword = () => {
   return (
     <section>
-      <h1 className='my-12 text-red-800 text-2xl '>This is Our Forget Password pages</h1>
+          <div className="mt-[60px]">
+      <ForgetPasswordForm className=""/>
+    </div>
     </section>
     );
 }

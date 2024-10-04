@@ -1,12 +1,13 @@
-import React from 'react'
-import Header from '../../components/Header';
+import React from "react";
+import Home from "../Home";
+import LoginForm from "../../components/LoginForm";
 
 const Login = () => {
   return (
-    <section>
-      <h1 className='my-12 text-red-800 text-2xl '>This is Our Login pages</h1>
-    </section>
-    );
-}
+    <div className="mt-[60px]">
+      <LoginForm className=""/>
+    </div>
+  );
+};
 
-export default Login
+export default Login;

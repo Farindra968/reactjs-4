@@ -1,9 +1,12 @@
 import React from 'react'
+import SignupForm from '../../components/SignupForm';
 
 const Register = () => {
   return (
     <section>
-      <h1 className='my-12 text-red-800 text-2xl '>This is Our Register pages</h1>
+    <div className="mt-[60px]">
+      <SignupForm className=""/>
+    </div>
     </section>
     );
 }
